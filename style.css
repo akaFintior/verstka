@@ -7,6 +7,14 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h1 {
+    color: #222222;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
 .header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
     border: 1px solid #ececec;
@@ -42,7 +50,7 @@ body {
     text-decoration: none;
     color: #222222;
     font-size: 27px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.68px;
 }
@@ -98,6 +106,7 @@ button[name="header-button"] {
     padding-left: 19px;
     padding-right: 19px;
     line-height: 38px;
+    text-transform: capitalize;
 }
 
 .header__cart {
@@ -161,6 +170,111 @@ button[name="header-button"] {
 
 .logo-letter {
     color: #f16d7f;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 0.68px;
+}
+
+.main_content {
+    display: flex;
+    margin-top: 98px;
+    margin-bottom: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-men {
+    background: url('img/Layer_30.jpg');
+    width: 560px;
+    height: 542px;
+    margin-bottom: 20px;
+}
+
+.content_women {
+    background: url(img/Layer_32.jpg);
+    width: 560px;
+    height: 261px;
+    margin-bottom: 20px;
+}
+
+.content-accesories {
+    background: #dadad2 url(img/Layer_37.jpg) no-repeat 149px -21px;
+    width: 560px;
+    height: 261px;
+}
+
+.content_kids {
+    background: url(img/Layer_31.jpg);
+    width: 560px;
+    height: 542px;
+}
+
+.content_column {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.text_box {
+    height: 82px;
+    background: #ffffff;
+    margin-top: 26px;
+    text-align: center;
+    width: 35%;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.text_box_mini {
+    color: #222222;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+
+.text_box_big {
+    color: #f16d7f;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+
+.featured {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 59px;
+}
+
+.main_featured {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 263px;
+    height: 364px;
+}
+.item_description {
+    color: #222222;
+font-size: 13px;
+font-weight: 700;
+text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.item_price {
+    color: #f16d7f;
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+    padding-top: 17px;
+}
+
+.main_button {
+    width: 250px;
+    margin-left: 40%;
 }
