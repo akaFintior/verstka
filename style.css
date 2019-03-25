@@ -104,7 +104,7 @@ button[name="header-button"] {
     letter-spacing: 0.38px;
     height: 38px;
     padding-left: 19px;
-    padding-right: 19px;
+    padding-right: 29px;
     line-height: 38px;
     text-transform: capitalize;
 }
@@ -257,24 +257,306 @@ button[name="header-button"] {
 .item {
     width: 263px;
     height: 364px;
+    margin: 10px;
+    margin-bottom: 40px;
 }
+
 .item_description {
     color: #222222;
-font-size: 13px;
-font-weight: 700;
-text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
     padding-top: 20px;
 }
 
 .item_price {
     color: #f16d7f;
-font-size: 16px;
-font-weight: 700;
-text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
     padding-top: 17px;
 }
 
 .main_button {
+    width: 153px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #f16d7f;
+    letter-spacing: 0.38px;
+    height: 38px;
+    padding-left: 19px;
+    padding-right: 40px;
+    line-height: 38px;
+    text-transform: capitalize;
+    margin-bottom: 113px;
+}
+
+.featured_row {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1139px;
+    justify-content: space-around;
+}
+
+.main_offer {
+    width: 1140px;
+    height: 529px;
+    margin: 0 auto;
+    display: flex;
+    background: #222224;
+    margin-bottom: 97px;
+}
+
+.main_offer_left {
+    background: url(img/Layer_38.jpg);
+    width: 767px;
+}
+
+.offer_left_big {
+    padding-top: 146px;
+    padding-left: 39px;
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.offer_left_mini {
+    font-size: 32px;
+    letter-spacing: 0.9px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 39px;
+}
+
+.offer_right_big {
+    padding-left: 14px;
+    padding-top: 55px;
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.offer_right_mini {
+    padding-left: 14px;
+    padding-top: 17px;
+    padding-bottom: 5px;
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.35px;
+    width: 219px;
+}
+
+.main_offer_right {
+    padding-right: 43px;
+}
+
+.main_offer_middle {
+    width: 100px;
+}
+
+img[alt="delivery"] {
+    margin-top: 55px;
+    margin-left: 45px;
+}
+
+img[alt="discounts"] {
+    margin-left: 45px;
+    margin-top: 124px;
+}
+
+img[alt="quality-assurance"] {
+    margin-left: 45px;
+    margin-top: 114px;
+}
+
+.quote {
+    color: #222224;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 0.4px;
+}
+
+.main_subscribe {
+    display: flex;
+    justify-content: center;
+    background: url(img/Subscribe.jpg);
+    height: 438px;
+    margin-bottom: 109px;
+}
+
+.subscribe_left {
+    width: 100px;
+    margin-top: 111px;
+}
+
+.name_mini {
+    color: #222224;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    padding-top: 3px;
+}
+
+.name_big {
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding-top: 19px;
+}
+
+.subscribe_middle {
+    width: 386px;
+    margin-top: 123px;
+}
+
+.subscribe_button {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #f16d7f;
+    letter-spacing: 0.38px;
+    height: 38px;
+    padding-left: 19px;
+    padding-right: 29px;
+    line-height: 38px;
+    text-transform: capitalize;
+    border-radius: 0 23px 23px 0;
+}
+
+.subscribe_right h3 {
+    color: #222224;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subscribe_right h4 {
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 25px;
+}
+
+.subcribe_form {
+    display: flex;
+}
+
+.subscribe_right {
+    margin-top: 148px;
+    margin-left: 165px;
+}
+
+input[name="subscribe"] {
     width: 250px;
-    margin-left: 40%;
+}
+
+input[name="subscribe"]:placeholder-shown {
+    opacity: 0.67;
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+.short_info {
+    color: #898989;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.35px;
+    margin-top: 40px;
+    text-transform: none;
+}
+
+.main_info {
+    margin-left: 228px;
+    width: 260px;
+    color: #3e3e40;
+    font-size: 27px;
+    font-weight: 300;
+    letter-spacing: 0.68px;
+}
+
+.main_links_and_info {
+    display: flex;
+    align-items: flex-start;
+        margin-bottom: 89px;
+}
+
+.main_company_links {
+    margin-left: 68px;
+}
+
+.main_links_and_info h3 {
+    color: #f16d7f;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    margin-bottom: 45px;
+}
+
+.main__links {
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    line-height: 45px;
+}
+
+.main_links_list {
+    list-style: none;
+}
+.main_info_links {
+   margin-left: 109px;
+}
+
+.main_shop_links {
+    margin-left: 103px;
+}
+
+.footer {
+    color: #7a7a7a;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 0.4px;
+    height: 79px;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_links {
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    margin: 4px;
+}
+
+.footer_right {
+    display: flex;
+    margin-top: 24px;
+}
+
+.footer_left {
+    margin-top: 33px;
 }
