@@ -849,3 +849,117 @@ img[alt="pink-cart"] {
     text-transform: uppercase;
     padding-left: 10px;
 }
+.item_category_list {
+    color: #ef5b70;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 246px;
+    border-left: 5px solid #ef5b70;
+    line-height: 37px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.item_category {
+    margin-top: 71px;
+    width: 473px;
+    float: left;
+}
+
+.category_options {
+    color: #6f6e6e;
+font-size: 14px;
+font-weight: 400;
+    line-height: 40px;
+    border-left: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.category_list_option {
+    margin-left: 280px;
+}
+
+.customer_options {
+    width: 847px;
+    margin-top: 71px;
+    display: flex;
+    justify-content: space-around;
+    color: #6f6e6e;
+font-size: 14px;
+font-weight: 400;
+
+}
+.customer_options h1 {
+    color: #6f6e6e;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.sizes {
+        display: flex;
+    width: 235px;
+    height: 39px;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.sizes label {
+    width: 53px;
+}
+
+
+.sort_items {
+    width: 846px;
+    height: 50px;
+    background: #f3f3f3;
+        margin-left: 543px;
+    margin-top: 40px;
+    display: flex;
+}
+.sort_items fieldset {
+    width: 153px;
+    height: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+border: 1px solid #ebebeb;
+background-color: #ffffff;
+}
+.sort_items label {
+    display: flex;
+    width: 54px;
+    height: 28px;
+    border-right: 1px solid #f3f3f3;
+    color: #6f6e6e;
+font-size: 14px;
+font-weight: 400;
+    padding-left: 5px;
+        align-items: center;
+}
+.sort_items input {
+    width: 99px;
+    height: 28px;
+    margin-left: 20px;
+    border: none;
+}
+
+.product_x {
+    display: inline-block;
+    margin-top: 50px;
+    width: 263px;
+    height: 364px;
+    justify-content: space-around;
+}
+
+.all_products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
