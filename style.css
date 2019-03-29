@@ -467,7 +467,7 @@ img[alt="quality-assurance"] {
     border-radius: 0 23px 23px 0;
 }
 
-.subscribe_right h3 {
+.subscribe_right-h3 {
     color: #222224;
     font-weight: 400;
     font-size: 24px;
@@ -476,7 +476,7 @@ img[alt="quality-assurance"] {
     text-align: center;
 }
 
-.subscribe_right h4 {
+.subscribe_right-h4 {
     color: #222224;
     font-size: 14px;
     font-weight: 400;
@@ -540,7 +540,7 @@ input[name="subscribe"]:placeholder-shown {
     margin-left: 68px;
 }
 
-.links_and_info h3 {
+.company_links-h3 {
     color: #f16d7f;
     font-size: 18px;
     font-weight: 700;
@@ -641,7 +641,7 @@ img[alt="arrow"] {
     background-color: #f8f3f4;
 }
 
-.arrivals h1 {
+.arrivals-h1 {
     color: #f16d7f;
     font-size: 24px;
     font-weight: 400;
@@ -666,7 +666,6 @@ img[alt="arrow"] {
 
 .short_menu_list {
     display: inline-block;
-    
 }
 
 .product__item {
@@ -706,7 +705,7 @@ img[alt="previous"] {
     margin-top: 10px;
 }
 
-.item__description h1 {
+.item__description-h1 {
     color: #f16d7f;
     padding-top: 25px;
     border-bottom: 1px solid #eaeaea;
@@ -789,7 +788,7 @@ img[alt="pink-cart"] {
     display: flex;
 }
 
-.add_to_cart input {
+.add_to_cart-input {
     width: 144px;
     height: 35px;
     padding-left: 20px;
@@ -849,11 +848,12 @@ img[alt="pink-cart"] {
     text-transform: uppercase;
     padding-left: 10px;
 }
+
 .item_category_list {
     color: #ef5b70;
-font-size: 14px;
-font-weight: 700;
-text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
     margin-top: 20px;
     margin-left: 246px;
     border-left: 5px solid #ef5b70;
@@ -870,8 +870,8 @@ text-transform: uppercase;
 
 .category_options {
     color: #6f6e6e;
-font-size: 14px;
-font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 40px;
     border-left: none;
     list-style: none;
@@ -888,19 +888,19 @@ font-weight: 400;
     display: flex;
     justify-content: space-around;
     color: #6f6e6e;
-font-size: 14px;
-font-weight: 400;
-
+    font-size: 14px;
+    font-weight: 400;
 }
-.customer_options h1 {
+
+.customer_options-h1 {
     color: #6f6e6e;
-font-size: 14px;
-font-weight: 700;
-text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .sizes {
-        display: flex;
+    display: flex;
     width: 235px;
     height: 39px;
     color: #6f6e6e;
@@ -910,40 +910,43 @@ text-transform: uppercase;
     flex-wrap: wrap;
     margin-top: 10px;
 }
+
 .sizes label {
     width: 53px;
 }
-
 
 .sort_items {
     width: 846px;
     height: 50px;
     background: #f3f3f3;
-        margin-left: 543px;
+    margin-left: 543px;
     margin-top: 40px;
     display: flex;
 }
-.sort_items fieldset {
+
+.sort_items-fieldset {
     width: 153px;
     height: 30px;
     margin: 10px;
     display: flex;
     justify-content: space-around;
-border: 1px solid #ebebeb;
-background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
 }
-.sort_items label {
+
+.sort_items-label {
     display: flex;
     width: 54px;
     height: 28px;
     border-right: 1px solid #f3f3f3;
     color: #6f6e6e;
-font-size: 14px;
-font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
     padding-left: 5px;
-        align-items: center;
+    align-items: center;
 }
-.sort_items input {
+
+.sort_items-input {
     width: 99px;
     height: 28px;
     margin-left: 20px;
@@ -958,8 +961,45 @@ font-weight: 400;
     justify-content: space-around;
 }
 
+.product_x:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.product_x:hover img[alt="product_x"] {
+    filter: brightness(40%);
+}
+
 .all_products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.delivery_and_discounts {
+    height: 341px;
+    background: #222224;
+    display: flex;
+    justify-content: center;
+}
+
+.delivery_and_discount-article {
+    margin: 80px;
+    display: flex;
+    flex-flow: column;
+}
+.delivery_and_discounts-h1 {
+        color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-top: 32px;
+    margin-bottom: 17px;
+}
+
+.delivery_and_discounts-p {
+    width: 310px;
+        color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.35px;
 }
