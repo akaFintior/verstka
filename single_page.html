@@ -5,29 +5,100 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet"> </head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> </head>
 
 <body>
     <header class="header">
         <div class="container header-flex">
             <div class="header__left">
-                <a class="logo" href="#"><img src="img/logo.png" alt="logo">BRAN<span class="logo-letter">D</span></a>
+                <a class="logo" href="index.html"><img src="img/logo.png" alt="logo">BRAN<span class="logo-letter">D</span></a>
                 <form class="header__form" action="#">
-                    <div class="browse">Browse<img src="img/baseline-arrow_drop_down-24px.svg" alt="arrow_down"></div>
+                    <div class="browse">Browse <i class="fas fa-sort-down browse-arrow"></i>
+                        <div class="drop_browse">
+                            <div class="drop_flex">
+                                <h3 class="drop_browse-h3">Women</h3>
+                                <ul class="drop_menu">
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Dresses</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Tops</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Blazers</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Denim</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Leggings/Pants</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Skirts/Shorts</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Accessories</a></li>
+                                </ul>
+                                <h3 class="drop_browse-h3">Men</h3>
+                                <ul class="drop_menu">
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Tees/Tank tops</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Shirts/Polos</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Sweaters</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Sweatshirts/Hoodies</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Blazers</a></li>
+                                    <li class="drop_menu_list"><a href="#" class="drop_menu_link">Jackets/vests</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <input type="text" name="search-bar" placeholder="Search for Item...">
-                    <button type="submit" name="header-button"><img src="img/outline-search-24px.svg" alt="search"></button>
+                    <button type="submit" name="header-button"><i class="fas fa-search search__button"></i></button>
                 </form>
             </div>
-            <div class="header__right"> <img class="header__cart" src="img/cart.svg" alt="cart">
-                <div class="button">My Account<img src="img/baseline-arrow_drop_down-24px.svg" alt="arrow_down"></div>
+            <div class="header__right">
+                <a href="#"><img class="header__cart" src="img/cart.svg" alt="cart"></a>
+                <div class="button">My Account <i class="fas fa-sort-down my_acc_button"></i></div>
             </div>
         </div>
     </header>
     <nav>
         <ul class="menu">
-            <li class="menu__list"><a href="index.html" class="menu__link">Home </a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Home </a></li>
             <li class="menu__list"><a href="#" class="menu__link">Man </a></li>
-            <li class="menu__list"><a href="#" class="menu__link">Women </a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Women</a>
+                <div class="drop">
+                    <div class="drop_flex">
+                        <h3 class="drop_h3">Women</h3>
+                        <ul class="drop_menu">
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Dresses</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Tops</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Blazers</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Denim</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Leggings/Pants</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Skirts/Shorts</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop_flex">
+                        <h3 class="drop_h3">Women</h3>
+                        <ul class="drop_menu">
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Dresses</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Tops</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
+                        </ul>
+                        <h3 class="drop_h3">Women</h3>
+                        <ul class="drop_menu">
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Dresses</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Tops</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop_flex">
+                        <h3 class="drop_h3">Women</h3>
+                        <ul class="drop_menu">
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Dresses</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Tops</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                            <li class="drop_menu_list"><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
+                        </ul>
+                        <div class="drop_menu_sale">
+                            <h2 class="drop_menu_sale-h2">Super sale!</h2> </div>
+                    </div>
+                </div>
+            </li>
             <li class="menu__list"><a href="#" class="menu__link">Kids </a></li>
             <li class="menu__list"><a href="#" class="menu__link">Accoseriese </a></li>
             <li class="menu__list"><a href="#" class="menu__link">Featured </a></li>
@@ -45,12 +116,8 @@
         </nav>
     </div>
     <div class="product__item">
-        <div class="previous_item">
-            <a href="#" class="previous_next"><img src="img/baseline-navigate_before-24px.svg" alt="previous"></a>
-        </div> <img src="img/Layer_42.jpg" alt="product__image">
-        <div class="next_item">
-            <a href="#" class="previous_next"><img src="img/baseline-navigate_next-24px.svg" alt="next"></a>
-        </div>
+        <div class="previous_item"> <a href="#" class="previous_next"><i class="fas fa-caret-left arrow_product"></i></a> </div> <img src="img/Layer_42.jpg" alt="product__image">
+        <div class="next_item"> <a href="#" class="previous_next"><i class="fas fa-caret-right arrow_product"></i></a> </div>
     </div>
     <div class="item__description">
         <h1 class="item__description-h1">women collection</h1>
@@ -164,11 +231,11 @@
             <p>&copy; 2017 Brand All Rights Reserved.</p>
         </div>
         <div class="footer_right">
-            <div class="social_links">f</div>
-            <div class="social_links">t</div>
-            <div class="social_links">in</div>
-            <div class="social_links">P</div>
-            <div class="social_links">G+</div>
+            <div class="social_links"><a href="#" class="footer_social_link"><i class="fab fa-facebook-f"></i></a></div>
+            <div class="social_links"><a href="#" class="footer_social_link"><i class="fab fa-twitter"></i></a></div>
+            <div class="social_links"><a href="#" class="footer_social_link"><i class="fab fa-linkedin-in"></i></a></div>
+            <div class="social_links"><a href="#" class="footer_social_link"><i class="fab fa-pinterest-p"></i></a></div>
+            <div class="social_links"><a href="#" class="footer_social_link"><i class="fab fa-google-plus-g"></i></a></div>
         </div>
     </footer>
 </body>
