@@ -889,6 +889,7 @@ img[alt="pink-cart"] {
     width: 263px;
     height: 364px;
     justify-content: space-around;
+    position: relative;
 }
 .product_x:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
@@ -896,6 +897,9 @@ img[alt="pink-cart"] {
 }
 .product_x:hover img[alt="product_x"] {
     filter: brightness(40%);
+}
+.product_x:hover .product_hover {
+    visibility: visible;
 }
 .all_products {
     display: flex;
@@ -1083,4 +1087,47 @@ img[alt="pink-cart"] {
     padding-top: 8px;
     margin-bottom: 8px;
     text-align: left;
+}
+.product_hover {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    visibility: hidden;
+}
+.product_hover_button {
+    display: flex;
+}
+.product_hover_p {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    width: 123px;
+    height: 39px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_hover_p-half {
+    width: 57px;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    margin: 4px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-cart {
+    width: 23px;
+}
+.video {
+    margin-top: 19px;
+    height: 364px;
+    width: 536px;
 }
