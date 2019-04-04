@@ -142,6 +142,12 @@ img[alt="cart_white"]
         height: 38px
         margin-left: -36px
         background: #ffffff
+    &:hover
+        color: $pink
+        background-color: #ffffff
+        outline: 1px solid $pink
+        & .my_acc_button
+            color: $pink
 
 
 .menu 
@@ -226,6 +232,12 @@ img[alt="cart_white"]
         text-transform: capitalize
         margin-bottom: 113px
         position: relative
+        &:hover
+            color: $pink
+            background-color: #ffffff
+            outline: 1px solid $pink
+            & .long_arrow__button
+                color: $pink
     &_offer 
         width: 1140px
         height: 529px
@@ -346,6 +358,8 @@ img[alt="cart_white"]
         width: 123px
         height: 39px
         visibility: hidden
+        &:hover
+            background-color: $pink
     &_image 
         width: 261px
         height: 280px
@@ -501,13 +515,15 @@ img[alt="quality-assurance"]
         font-weight: 400
         background-color: $pink
         letter-spacing: 0.38px
-        height: 38px
-        padding-left: 19px
-        padding-right: 29px
-        line-height: 38px
+        width: 104px
+        padding: 20px
         text-transform: capitalize
         border-radius: 0 23px 23px 0
-    &_form 
+        &:hover
+            color: $pink
+            background-color: #eeeeee
+            border: 1px solid $pink
+    &_form
         display: flex
     &_right 
         margin-top: 148px
@@ -528,6 +544,7 @@ img[alt="quality-assurance"]
             text-align: center
             margin-top: 3px
             margin-bottom: 25px
+
 
 .name
     &_mini 
@@ -755,11 +772,16 @@ img[alt="pink-cart"]
         margin-top: 178px
         border: 1px solid #ef5b70
         background-color: #ffffff
-        line-height: 55px
-        color: #ef5b70
-        font-size: 16px
-        font-weight: 700
         margin-left: 43px
+        &_link
+            display: block
+            line-height: 55px
+            color: #ef5b70
+            font-size: 16px
+            font-weight: 700
+            &:hover
+                color: #ffffff
+                background-color: $pink
     &_fieldset 
         height: 61px
         border: none
@@ -941,8 +963,6 @@ img[alt="some-promo-img"]
         &_list 
             list-style: none
             text-align: left
-            &:hover .drop 
-                display: flex
         &_sale 
             display: flex
             justify-content: flex-end
@@ -1034,6 +1054,8 @@ img[alt="some-promo-img"]
 
 .menu__list 
     position: relative
+    &:hover .drop 
+        display: flex
 
 
 .browse-arrow 
@@ -1049,6 +1071,7 @@ img[alt="some-promo-img"]
     top: 9px
     right: 12px
 
+
 .search__button 
     color: #a4a4a4
 
@@ -1057,6 +1080,7 @@ img[alt="some-promo-img"]
     top: 13px
     right: 22px
     color: #ffffff
+    
 
 .catalog_content 
     display: flex
@@ -1162,6 +1186,9 @@ img[alt="some-promo-img"]
     display: flex
     justify-content: center
     align-items: center
+    &:hover
+        color: #ffffff
+        background-color: $pink
 
 
 .go-to-cart-button 
@@ -1176,5 +1203,42 @@ img[alt="some-promo-img"]
     display: flex
     justify-content: center
     align-items: center
+    &:hover
+        background-color: #eaeaea
 
-
+.pages
+    display: flex
+    margin: 20px
+    justify-content: space-between
+    &_button
+        width: 150px
+        height: 44px
+        line-height: 44px
+        border-radius: 3px
+        border: 1px solid #ef5b70
+        color: #ef5b70
+        font-size: 16px
+        font-weight: bold
+        background-color: #ffffff
+        display: flex
+        justify-content: center
+        &:hover
+            color: #ffffff
+            background-color: #ef5b70
+    &_left
+        padding: 5px
+        list-style: none
+        display: flex
+        justify-content: space-between
+        width: 261px
+        height: 44px
+        border-radius: 3px
+        border: 1px solid #ebebeb
+        background-color: #ffffff
+        &_link
+            color: #c4c4c4
+            font-size: 16px
+            font-weight: bold
+            line-height: 44px
+            &:hover
+                color: #ef5b70
