@@ -1412,7 +1412,7 @@ img[alt="some-promo-img"] {
   border-radius: 5px;
   position: absolute;
   background: #ffffff;
-  top: 47px;
+  top: 37px;
   left: -8px;
   visibility: hidden;
 }
@@ -1705,5 +1705,51 @@ img[alt="some-promo-img"] {
 
 .pages_left_link:hover {
   color: #ef5b70;
+}
+
+.cart_products {
+  width: 1140px;
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 20px;
+}
+
+.cart_products_product_details_h1 {
+  width: 400px;
+  color: #222222;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: -0.2px;
+}
+
+.cart_products_unit_price_h1, .cart_products_quantity_h1 {
+  width: 150px;
+  color: #222222;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+}
+
+.cart_products_shipping_h1, .cart_products_subtotal_h1, .cart_products_action_h1 {
+  width: 100px;
+  color: #222222;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
 }
 /*# sourceMappingURL=style.css.map */
