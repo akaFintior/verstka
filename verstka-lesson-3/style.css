@@ -1961,4 +1961,50 @@ img[alt="some-promo-img"] {
   background-color: #ffffff;
   outline: 1px solid #f16d7f;
 }
+
+.checkout_form {
+  margin-bottom: 90px;
+  margin-top: 40px;
+}
+
+.checkout_fieldset {
+  width: 1140px;
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.checkout_fieldset_legend {
+  height: 75px;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+
+.checkout_fieldset_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.checkout_fieldset_flex_h1 {
+  color: #222222;
+  margin: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.checkout_fieldset_flex_h2 {
+  margin: 5px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: none;
+}
 /*# sourceMappingURL=style.css.map */
