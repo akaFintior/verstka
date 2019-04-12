@@ -1,0 +1,3 @@
+[submodule "verstka"]
+	path = verstka
+	url = https://github.com/akaFintior/verstka.git
