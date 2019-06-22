@@ -74,6 +74,9 @@ Vue.component('cart-item', {
                         <img :src="product.product_img" :alt="product.product_name" width="100" height="150">
                         <div class="cart_products_item_img_and_desc_info">
                             <a href="single_page.html" class="cart_products_item_img_and_desc_h1">{{product.product_name}}</a>
+                            <div class="cart_products_item_img_and_desc_rate">
+                                <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i>
+                            </div>
                             <p class="cart_products_item_img_and_desc_p">Color: <span class="gray">Red</span></p>
                             <p class="cart_products_item_img_and_desc_p">Size: <span class="gray">XII</span></p>
                         </div>

@@ -5,6 +5,6 @@ Vue.component('search', {
             <drop-browse></drop-browse>
         </div>
         <input type="text" name="search-bar" placeholder="Search for Item...">
-        <button type="submit" name="header-button"><i class="fas fa-search search__button"></i></button>
+        <button type="submit" class="header-button"><i class="fas fa-search search__button"></i></button>
     </form>`
 })
