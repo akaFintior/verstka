@@ -29,7 +29,7 @@ Vue.component('similiar-item', {
             <div class="similiar_product_item">
                 <div class="item_image">
                     <a href="#"><img :src="product.product_img" :alt="product.product_name"></a>
-                    <div class="item_button">
+                    <div class="item_button" @click="$root.$refs.headComp.$refs.cart.addProduct(product)">
                         <img src="img/cart_white.svg" alt="cart_white">
                         Add to Cart
                     </div>

@@ -34,7 +34,7 @@ Vue.component('catalog-product', {
             <div class="product_x">
                 <a href="single_page.html"><img :src="product.product_img" :alt="product.product_name"></a>
                 <div class="product_hover">
-                    <p class="product_hover_p"><i class="fas fa-shopping-cart product-cart"></i> Add to Cart</p>
+                    <p class="product_hover_p" @click="$root.$refs.headComp.$refs.cart.addProduct(product)"><i class="fas fa-shopping-cart product-cart"></i> Add to Cart</p>
                     <div class="product_hover_button">
                         <p class="product_hover_p-half"><i class="fas fa-retweet"></i></p>
                         <p class="product_hover_p-half"><i class="far fa-heart"></i></p>

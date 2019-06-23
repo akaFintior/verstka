@@ -56,9 +56,10 @@ Vue.component("product-item", {
                 </fieldset>
                 <fieldset class="add_to_cart_fieldset">
                     <label>QUANTITY</label>
-                    <input type="number" placeholder="2" class="add_to_cart-input"> </fieldset>
-                <div class="add_to_cart_button"><a href="#" class="add_to_cart_button_link"><i
-                            class="fas fa-shopping-cart"></i>Add to Cart</a></div>
+                    <input type="number" placeholder="1" class="add_to_cart-input"> </fieldset>
+                <div class="add_to_cart_button" @click.prevent="$root.$refs.headComp.$refs.cart.addProduct(product)">
+                    <a href="#" class="add_to_cart_button_link">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart</a></div>
             </form>
         </div>
     </div>`

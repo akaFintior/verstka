@@ -34,20 +34,16 @@ Vue.component('shopping-cart', {
             }
         },
         remove(product){
-            if(product.quantity > 1){
-                this.$parent.$parent.putJson(`/api/cart/${product.product_id}`, {quantity: -1})
-                    .then(data => {
-                        if(data.result){
-                            product.quantity--
-                        }
-                    })
-            } else {
-                this.$parent.$parent.deleteJson(`/api/cart/${product.product_id}`, product)
-                    .then(data => {
-                        if(data.result){
-                            this.cartItems.splice(this.cartItems.indexOf(product), 1);
-                        }
-                    })
+            this.$root.deleteJson(`/api/cart/${product.product_id}`, product)
+                .then(data => {
+                    if(data.result){
+                        this.cartItems.splice(this.cartItems.indexOf(product), 1);
+                    }
+                })
+        },
+        removeAll(){
+            for(let el of this.cartItems){
+                this.remove(el);
             }
         }
     },
@@ -72,11 +68,11 @@ Vue.component('shopping-cart', {
             </div>
             <cart-product 
             v-for="product of cartItems"
-            :product="product"
+            :cartProduct="product"
             :key="product.product_id"
             @remove="remove"></cart-product>
             <div class="clear_or_continue container">
-                <div class="clear_or_continue_button">Clear Shopping cart</div>
+                <div class="clear_or_continue_button" @click="removeAll()">Clear Shopping cart</div>
                 <div class="clear_or_continue_button">continue shopping</div>
             </div>
             <div class="checkout container">
@@ -104,13 +100,13 @@ Vue.component('shopping-cart', {
         </div>`
 });
 Vue.component('cart-product', {
-    props: ['product'],
+    props: ['cartProduct'],
     template: `
                 <div class="container cart_products_item">
                     <div class="cart_products_item_img_and_desc">
-                        <img :src="product.product_img" :alt="product.product_name" width="100" height="150">
+                        <img :src="cartProduct.product_img" :alt="cartProduct.product_name" width="100" height="150">
                         <div class="cart_products_item_img_and_desc_info">
-                            <a href="single_page.html" class="cart_products_item_img_and_desc_h1">{{product.product_name}}</a>
+                            <a href="single_page.html" class="cart_products_item_img_and_desc_h1">{{cartProduct.product_name}}</a>
                             <div class="cart_products_item_img_and_desc_rate">
                                 <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i>
                             </div>
@@ -118,11 +114,11 @@ Vue.component('cart-product', {
                             <p class="cart_products_item_img_and_desc_p">Size: <span class="gray">XII</span></p>
                         </div>
                     </div>
-                    <div class="cart_products_item_unit_price">\${{product.price}}</div>
+                    <div class="cart_products_item_unit_price">\${{cartProduct.price}}</div>
                     <div class="cart_products_item_quantity"><input type="number" class="cart_products_item_quantity_input" min="1"
-                            v-model:value="product.quantity"></div>
+                            v-model:value="cartProduct.quantity"></div>
                     <div class="cart_products_item_shipping">FREE</div>
-                    <div class="cart_products_item_subtotal">\${{product.price*product.quantity}}</div>
-                    <div class="cart_products_item_action"><i class="fas fa-times-circle" @click="$emit('remove', product)"></i></div>
+                    <div class="cart_products_item_subtotal">\${{cartProduct.price*cartProduct.quantity}}</div>
+                    <div class="cart_products_item_action"><i class="fas fa-times-circle" @click="$emit('remove', cartProduct)"></i></div>
                 </div>`
 })

@@ -570,6 +570,11 @@ img[alt="cart_white"] {
   margin-bottom: 59px;
 }
 
+details summary {
+  outline: none;
+  list-style-type: none;
+}
+
 .item {
   width: 263px;
   min-height: 364px;
@@ -683,6 +688,7 @@ img[alt="cart_white"] {
 }
 
 .item_category {
+  cursor: pointer;
   margin-top: 71px;
   width: 473px;
 }
