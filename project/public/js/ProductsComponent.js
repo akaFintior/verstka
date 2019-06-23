@@ -1,13 +1,12 @@
 Vue.component('products', {
     data() {
         return {
-            productsUrl: "../server/db/products_mainPage.json",
             mainProducts: [],
 
         }
     },
     mounted(){
-        this.$root.getJson(this.productsUrl)
+        this.$root.getJson(`/api/mainproducts`)
             .then(data => {
                 for(let el of data){
                     this.mainProducts.push(el);
@@ -30,7 +29,7 @@ Vue.component('single-product', {
             <div class="item">
                 <div class="item_image">
                     <a href="single_page.html"><img :src="product.product_img" :alt="product.product_name"> </a>
-                    <div class="item_button">
+                    <div class="item_button" @click="$root.$refs.headComp.$refs.cart.addProduct(product)">
                         <img src="img/cart_white.svg" alt="cart_white">
                         Add to Cart
                     </div>

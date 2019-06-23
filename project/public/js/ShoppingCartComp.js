@@ -1,13 +1,12 @@
 Vue.component('shopping-cart', {
     data(){
         return {
-            cartUrl: `../server/db/userCart.json`,
             cartItems: [],
             price: 0
         }
     },
     mounted(){
-        this.$parent.getJson(this.cartUrl)
+        this.$parent.getJson(`/api/cart`)
             .then(data => {
                 for(let el of data){
                     this.cartItems.push(el);

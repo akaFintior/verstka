@@ -1,12 +1,11 @@
 Vue.component('catalog', {
     data(){
         return {
-            allProductsUrl: "../../server/db/products_catalog.json",
             products: []
         }
     },
     mounted(){
-        this.$parent.getJson(this.allProductsUrl)
+        this.$parent.getJson(`/api/catalogproducts`)
             .then(data => {
                 for(let el of data){
                     this.products.push(el);

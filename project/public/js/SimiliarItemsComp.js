@@ -1,12 +1,11 @@
 Vue.component('similiar', {
     data(){
         return {
-            itemsUrl: "../server/db/products_singlePage.json",
             similiarProducts: [],
         }
     },
     mounted(){
-        this.$parent.getJson(this.itemsUrl)
+        this.$parent.getJson(`/api/similiarproducts`)
             .then(data => {
                 for(let el of data){
                     this.similiarProducts.push(el);
