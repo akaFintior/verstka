@@ -1,38 +1,24 @@
 Vue.component('similiar', {
     data(){
         return {
-            products: [{
-                "product_name": "BLAZE LEGGINS",
-                "price": 52,
-                "product_id": 10,
-                "product_img": "img/woman.jpg"
-            },
-            {
-                "product_name": "ALEXA SWEATER",
-                "price": 52,
-                "product_id": 11,
-                "product_img": "img/woman2.jpg"
-            },
-            {
-                "product_name": "AGNES TOP",
-                "price": 52,
-                "product_id": 12,
-                "product_img": "img/woman3.jpg"
-            },
-            {
-                "product_name": "SYLVIA SWEATER",
-                "price": 52,
-                "product_id": 13,
-                "product_img": "img/woman4.jpg"
-            }]
+            itemsUrl: "../server/db/products_singlePage.json",
+            similiarProducts: [],
         }
+    },
+    mounted(){
+        this.$parent.getJson(this.itemsUrl)
+            .then(data => {
+                for(let el of data){
+                    this.similiarProducts.push(el);
+                }
+            });
     },
     template: `
     <div>
         <h2>You may also like</h2>
         <div class="similiar_items">
             <similiar-item
-            v-for="product of products"
+            v-for="product of similiarProducts"
             :product="product"
             :key="product.product_id"></similiar-item> 
         </div>

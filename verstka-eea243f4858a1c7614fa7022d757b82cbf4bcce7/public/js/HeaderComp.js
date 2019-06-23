@@ -8,7 +8,7 @@ Vue.component('head-comp', {
                 <search></search>
             </div>
             <div class="header__right">
-                <cart></cart>
+                <cart ref="cart"></cart>
                 <div class="button">My Account <i class="fas fa-sort-down my_acc_button"></i></div>
             </div>
         </div>

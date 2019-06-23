@@ -175,6 +175,7 @@ a
         &:active .drop-cart
             visibility: visible
     &-button
+        cursor: pointer
         width: 36px
         height: 38px
         margin-left: -36px
@@ -214,6 +215,7 @@ img[alt="cart_white"]
 
 
 .browse 
+    cursor: pointer
     width: 87px
     height: 38px
     border-radius: 3px 0 0 3px
@@ -235,6 +237,7 @@ img[alt="cart_white"]
 
 .button 
     color: #ffffff
+    cursor: pointer
     font-size: 15px
     font-weight: 400
     background-color: $pink
@@ -244,8 +247,7 @@ img[alt="cart_white"]
     padding-right: 29px
     line-height: 38px
     text-transform: capitalize
-    position: relative
-        
+    position: relative    
     &:hover
         color: $pink
         background-color: #ffffff
@@ -273,7 +275,7 @@ img[alt="cart_white"]
     height: 613px
     background-color: #e8e8e8
     &-content 
-        background-image: url(img/brand_back.jpg)
+        background-image: url(../img/brand_back.jpg)
         height: 100%
         background-position: 0 -51px
     &__big 
@@ -347,9 +349,8 @@ img[alt="cart_white"]
         display: flex
         background: #222224
         margin: 0 auto 97px
-
         &_left
-            background: url(img/Layer_38.jpg)
+            background: url(../img/Layer_38.jpg)
             width: 767px
         &_right 
             padding-right: 43px
@@ -369,21 +370,21 @@ img[alt="cart_white"]
 
 .content
     &-men 
-        background: url('img/Layer_30.jpg')
+        background: url('../img/Layer_30.jpg')
         width: 560px
         height: 542px
         margin-bottom: 20px
     &_women 
-        background: url(img/Layer_32.jpg)
+        background: url(../img/Layer_32.jpg)
         width: 560px
         height: 261px
         margin-bottom: 20px
     &-accesories 
-        background: #dadad2 url(img/Layer_37.jpg) no-repeat 149px -21px
+        background: #dadad2 url(../img/Layer_37.jpg) no-repeat 149px -21px
         width: 560px
         height: 261px
     &_kids 
-        background: url(img/Layer_31.jpg)
+        background: url(../img/Layer_31.jpg)
         width: 560px
         height: 542px
     &_column 
@@ -433,7 +434,7 @@ img[alt="cart_white"]
         z-index: 1
         & .item_button 
             visibility: visible
-        & img[alt="product_item"] 
+        & img
             filter: brightness(40%)
     &_description 
         color: #222222
@@ -606,7 +607,7 @@ img[alt="quality-assurance"]
 .subscribe 
     display: flex
     justify-content: center
-    background: url(img/Subscribe.jpg) center no-repeat
+    background: url(../img/Subscribe.jpg) center no-repeat
     height: 438px
     margin: 0 auto 109px
     &_left
@@ -914,7 +915,7 @@ img[alt="pink-cart"]
         &:hover
             transform: scale(1.05)
             box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
-            & img[alt="similiar_product"] 
+            & img
                 filter: brightness(40%)
 
 
@@ -1013,7 +1014,7 @@ img[alt="pink-cart"]
         box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
         background-color: #ffffff
         transform: scale(1.05)
-        & img[alt="product_x"] 
+        & img
             filter: brightness(40%)
         & .product_hover 
             visibility: visible
@@ -1090,7 +1091,7 @@ img[alt="some-promo-img"]
             display: flex
             justify-content: flex-end
             align-items: flex-end
-            background-image: url(img/Layer_004.jpg)
+            background-image: url(../img/Layer_004.jpg)
             height: 118px
             width: 255px
             margin: 20px -20px
@@ -1161,6 +1162,9 @@ img[alt="some-promo-img"]
         top: 37px
         left: -8px
         visibility: hidden
+        &-empty
+            display: flex
+            justify-content: center
         &::before 
             content: ""
             width: 12px
@@ -1460,6 +1464,7 @@ img[alt="some-promo-img"]
     display: flex
     justify-content: space-between
     &_button
+        cursor: pointer
         width: 235px
         height: 50px
         text-align: center

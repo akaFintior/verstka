@@ -1,27 +1,64 @@
 Vue.component('shopping-cart', {
     data(){
         return {
-            products: [{
-                "product_name": "MANGO PEOPLE T-SHIRT",
-                "price": 52,
-                "product_id": 1,
-                "product_img": "img/Layer_2.jpg",
-                "quantity": 1
-            },
-            {
-                "product_name": "MANGO PEOPLE T-SHIRT",
-                "price": 52,
-                "product_id": 2,
-                "product_img": "img/Layer_3.jpg",
-                "quantity": 1
-            },
-            {
-                "product_name": "MANGO PEOPLE T-SHIRT",
-                "price": 52,
-                "product_id": 3,
-                "product_img": "img/Layer_4.jpg",
-                "quantity": 1
-            }]
+            cartUrl: `../server/db/userCart.json`,
+            cartItems: [],
+            price: 0
+        }
+    },
+    mounted(){
+        this.$parent.getJson(this.cartUrl)
+            .then(data => {
+                for(let el of data){
+                    this.cartItems.push(el);
+                }
+            });
+    },
+    methods: {
+        addProduct(product){
+            let find = this.cartItems.find(el => el.product_id === product.product_id);
+            if(find){
+                this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: 1})
+                    .then(data => {
+                        if(data.result){
+                            find.quantity++
+                        }
+                    })
+            } else {
+                let prod = Object.assign({quantity: 1}, product);
+                this.$parent.postJson(`/api/cart`, prod)
+                    .then(data => {
+                        if(data.result){
+                            this.cartItems.push(prod);
+                        }
+                    })
+            }
+        },
+        remove(product){
+            if(product.quantity > 1){
+                this.$parent.$parent.putJson(`/api/cart/${product.product_id}`, {quantity: -1})
+                    .then(data => {
+                        if(data.result){
+                            product.quantity--
+                        }
+                    })
+            } else {
+                this.$parent.$parent.deleteJson(`/api/cart/${product.product_id}`, product)
+                    .then(data => {
+                        if(data.result){
+                            this.cartItems.splice(this.cartItems.indexOf(product), 1);
+                        }
+                    })
+            }
+        }
+    },
+    computed: {
+        countCartTotal() {
+            this.price = 0;
+            for (let item of this.cartItems){
+                this.price += item.price*item.quantity;
+            }
+            return this.price;
         }
     },
     template: `
@@ -34,10 +71,11 @@ Vue.component('shopping-cart', {
                 <h1 class="cart_products_subtotal_h1">SUBTOTAL</h1>
                 <h1 class="cart_products_action_h1">ACTION</h1>
             </div>
-            <cart-item 
-            v-for="product of products"
+            <cart-product 
+            v-for="product of cartItems"
             :product="product"
-            :key="product.product_id"></cart-item>
+            :key="product.product_id"
+            @remove="remove"></cart-product>
             <div class="clear_or_continue container">
                 <div class="clear_or_continue_button">Clear Shopping cart</div>
                 <div class="clear_or_continue_button">continue shopping</div>
@@ -57,8 +95,8 @@ Vue.component('shopping-cart', {
                     <input type="button" value="APPLY COUPON">
                 </form>
                 <div class="checkout_total">
-                    <h2 class="checkout_total_h2">sub total $900</h2>
-                    <h1 class="checkout_total_h1">GRAND TOTAL <span class="pink">$900</span></h1>
+                    <h2 class="checkout_total_h2">sub total \${{ countCartTotal }}</h2>
+                    <h1 class="checkout_total_h1">GRAND TOTAL <span class="pink">\${{ countCartTotal }}</span></h1>
                     <div class="checkout_total_button"><a href="#" class="checkout_total_button_link">Proceed to
                             checkout</a>
                     </div>
@@ -66,7 +104,7 @@ Vue.component('shopping-cart', {
             </div>
         </div>`
 });
-Vue.component('cart-item', {
+Vue.component('cart-product', {
     props: ['product'],
     template: `
                 <div class="container cart_products_item">
@@ -82,10 +120,10 @@ Vue.component('cart-item', {
                         </div>
                     </div>
                     <div class="cart_products_item_unit_price">\${{product.price}}</div>
-                    <div class="cart_products_item_quantity"><input type="number" class="cart_products_item_quantity_input"
+                    <div class="cart_products_item_quantity"><input type="number" class="cart_products_item_quantity_input" min="1"
                             v-model:value="product.quantity"></div>
                     <div class="cart_products_item_shipping">FREE</div>
                     <div class="cart_products_item_subtotal">\${{product.price*product.quantity}}</div>
-                    <div class="cart_products_item_action"><i class="fas fa-times-circle"></i></div>
+                    <div class="cart_products_item_action"><i class="fas fa-times-circle" @click="$emit('remove', product)"></i></div>
                 </div>`
 })
