@@ -35,7 +35,7 @@ Vue.component('catalog-custom', {
         </div>
         <div>
             <h1 class="customer_options-h1">Price</h1>
-            <meter min="$52" max="$400" value="200"></meter>
+            <input type="range" min="5" max="10" step="0.01">
         </div>
     </form>`
 })
