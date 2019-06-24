@@ -42,9 +42,12 @@ Vue.component('shopping-cart', {
                 })
         },
         removeAll(){
-            for(let el of this.cartItems){
-                this.remove(el);
-            }
+            this.$root.deleteJson(`/api/cart/`)
+                .then(data => {
+                    if(data.result){
+                        this.cartItems = [];
+                    }
+                })
         }
     },
     computed: {

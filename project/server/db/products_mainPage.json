@@ -1,49 +1,49 @@
 [
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "GRESCENT BAY T-SHIRT",
+        "price": 27,
         "product_id": 1,
         "product_img": "img/Layer_2.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "MANGO PEOPLE BLUSE",
+        "price": 43,
         "product_id": 2,
         "product_img": "img/Layer_3.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "REEBOK JACKET",
+        "price": 46,
         "product_id": 3,
         "product_img": "img/Layer_4.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "MANGO WHITE BLUSE",
+        "price": 46,
         "product_id": 4,
         "product_img": "img/Layer_5.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "BLACK AND WHITE BLUSE",
+        "price": 47,
         "product_id": 5,
         "product_img": "img/Layer_6.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "BLUE JOHNAS SUIT",
+        "price": 93,
         "product_id": 6,
         "product_img": "img/Layer_7.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "MANGO PEOPLE TRAUSERS",
+        "price": 36,
         "product_id": 7,
         "product_img": "img/Layer_8.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "ADIDAS ABIBAS",
+        "price": 86,
         "product_id": 8,
         "product_img": "img/Layer_9.jpg"
     }

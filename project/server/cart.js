@@ -12,10 +12,15 @@ let remove = (cart, req) => {
     cart.splice(cart.indexOf(find), 1);
     return JSON.stringify(cart, null, 4);
 }
+let removeAll = (cart) => {
+    cart = [];
+    return JSON.stringify(cart, null, 4);
+}
 
 
 module.exports = {
     add,
     change,
-    remove
+    remove,
+    removeAll
 }

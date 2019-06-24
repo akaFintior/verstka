@@ -1,55 +1,55 @@
 [
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "NIKE JACKET",
+        "price": 57,
         "product_id": 15,
         "product_img": "img/Layer_43.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "COOL BLACK JACKET",
+        "price": 87,
         "product_id": 16,
         "product_img": "img/Layer_44.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "REEBOK JACKET",
+        "price": 46,
         "product_id": 3,
         "product_img": "img/Layer_4.jpg"
     },
     {
         "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "price": 23,
         "product_id": 17,
         "product_img": "img/men4.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "MANGO PEOPLE WARM HAT",
+        "price": 17,
         "product_id": 18,
         "product_img": "img/men41.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "OXFORD JACKET",
+        "price": 51,
         "product_id": 19,
         "product_img": "img/men42.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "BLUE JOHNAS SUIT",
+        "price": 93,
         "product_id": 20,
         "product_img": "img/Layer_48.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "MANGO PEOPLE JACKET",
+        "price": 50,
         "product_id": 21,
         "product_img": "img/Layer_49.jpg"
     },
     {
-        "product_name": "MANGO PEOPLE T-SHIRT",
-        "price": 52,
+        "product_name": "GREY LIGHT T-SHIRT",
+        "price": 21,
         "product_id": 25,
         "product_img": "img/men43.jpg"
     }
