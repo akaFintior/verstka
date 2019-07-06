@@ -1,0 +1,26 @@
+[
+    {
+        "product_name": "BLAZE LEGGINS",
+        "price": 45,
+        "product_id": 10,
+        "product_img": "img/woman.jpg"
+    },
+    {
+        "product_name": "ALEXA SWEATER",
+        "price": 87,
+        "product_id": 11,
+        "product_img": "img/woman2.jpg"
+    },
+    {
+        "product_name": "AGNES TOP",
+        "price": 36,
+        "product_id": 12,
+        "product_img": "img/woman3.jpg"
+    },
+    {
+        "product_name": "SYLVIA SWEATER",
+        "price": 65,
+        "product_id": 13,
+        "product_img": "img/woman4.jpg"
+    }
+]
